@@ -6,8 +6,8 @@ branch=$3
 
 if [ -z $file]; then
 	echo "$file does not exist in this directory"
+exit code 1	
 fi
-exit code 1
 
 git add $file && git commit -m "changes in $file"
 echo "staging and commit complete!"
